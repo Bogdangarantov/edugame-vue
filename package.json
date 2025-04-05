@@ -9,8 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "bootstrap-icons-vue": "^1.11.3",
+    "bootstrap-vue-next": "^0.28.3",
     "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "vue-router": "^4.5.0",
+    "vue3-carousel": "^0.15.0",
+    "vue3-google-map": "^0.21.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
