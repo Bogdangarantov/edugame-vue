@@ -120,7 +120,7 @@ export default {
 }
 
 .bg-container {
-  background-image: url('../components/icons/bg1.png');
+  background-image: url('../components/icons/bg1.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -202,6 +202,11 @@ export default {
   font-size: 25px;
   font-family: var(--ma);
   font-weight: 600;
+  border: transparent 1px solid;
+
+}
+.join:hover{
+  border: red 1px solid;
 }
 
 @media (max-width: 768px) {

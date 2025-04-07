@@ -43,8 +43,14 @@ export default {
   font-family: var(--ma);
   font-size: 25px;
   font-weight: 400;
-}
 
+}
+.nav-item a:hover{
+  color: red !important;
+}
+.nav-item:hover{
+  color: red!important;
+}
 @media (max-width: 480px) {
   .additional-div{
     display: none;

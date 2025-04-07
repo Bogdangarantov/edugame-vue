@@ -1,6 +1,6 @@
 <template>
   <section class="image-container">
-    <img src="../components/icons/ConferenceHall.png" alt="Виступ" class="divider-image">
+    <img src="../components/icons/ConferenceHall.jpg" alt="Виступ" class="divider-image">
   </section>
 </template>
 

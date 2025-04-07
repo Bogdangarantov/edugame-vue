@@ -2,7 +2,7 @@
   <section :id="id" class="slider-container" :class="directionClass">
     <div class="slider-track">
       <div class="slide" v-for="(image, index) in repeatedImages" :key="image.id + '-' + index">
-        <img :src="image.url" alt="image" />
+        <img   :src="image.url" alt="image" />
       </div>
     </div>
   </section>

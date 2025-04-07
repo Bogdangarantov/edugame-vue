@@ -57,12 +57,12 @@
           </div>
           <p class="media-label">Instagram</p>
         </a>
-        <div class="media">
+        <a href="https://www.facebook.com/share/1Brucn1ibk/" class="media">
           <div class="icon">
-            <telegram-icon/>
+            <facebook-icon/>
           </div>
-          <p class="media-label">Telegram</p>
-        </div>
+          <p class="media-label">Facebook</p>
+        </a>
         <a href="https://www.youtube.com/@AthensSchoolTube" class="media">
           <div class="icon">
             <youtube-icon/>
@@ -78,10 +78,11 @@
 import InstagramIcon from "@/components/icons/InstagramIcon.vue";
 import TelegramIcon from "@/components/icons/TelegramIcon.vue";
 import YoutubeIcon from "@/components/icons/YoutubeIcon.vue";
+import FacebookIcon from "@/components/icons/FacebookIcon.vue";
 
 export default {
   name: "Contacts",
-  components: { YoutubeIcon, TelegramIcon, InstagramIcon }
+  components: {FacebookIcon, YoutubeIcon, TelegramIcon, InstagramIcon }
 };
 </script>
 
@@ -152,6 +153,9 @@ export default {
   justify-content: center;
 }
 
+.media:hover .media-label {
+  color: red;
+}
 .media p {
   text-align: center;
   font-family: var(--m);
@@ -163,18 +167,26 @@ export default {
 
 a {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:visited {
   color: white;
 }
 
-a:hover,
 a:active,
 a:focus {
   color: white;
   text-decoration: none;
+}
+a:hover{
+  color: red;
+  text-decoration: none;
+  fill: red;
+}
+
+.media-label{
+  padding-top: 1rem;
 }
 
 /* Адаптивні стилі */

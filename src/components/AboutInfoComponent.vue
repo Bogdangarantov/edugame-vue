@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="col about-image-div">
-        <img class="about-image" src="../../src/components/icons/about-info.png" alt="EduGame Conf">
+        <img class="about-image" src="../../src/components/icons/about-info.jpg" alt="EduGame Conf">
       </div>
     </div>
   </section>
