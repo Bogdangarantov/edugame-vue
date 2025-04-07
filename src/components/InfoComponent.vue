@@ -8,12 +8,7 @@
         <div class="row">
           <div class="col edugame-title">
             <div>
-              <h2 class="edu-game">EduGame.</h2>
-            </div>
-            <div>
-              <h2 class="info-games-in-knowledge">
-                Iгри в освіті
-              </h2>
+              <h2 class="info-games-in-knowledge"><strong>EduGame. </strong> Iгри в освіті</h2>
             </div>
           </div>
         </div>
@@ -89,12 +84,12 @@ export default {
       const difference = this.targetDate - now;
 
       if (difference > 0) {
-        this.timeLeft.days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        this.timeLeft.hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        this.timeLeft.minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-        this.timeLeft.seconds = Math.floor((difference % (1000 * 60)) / 1000);
+        this.timeLeft.days = String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, '0');
+        this.timeLeft.hours = String(Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+        this.timeLeft.minutes = String(Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+        this.timeLeft.seconds = String(Math.floor((difference % (1000 * 60)) / 1000)).padStart(2, '0');
       } else {
-        this.timeLeft = {days: 0, hours: 0, minutes: 0, seconds: 0};
+        this.timeLeft = { days: '00', hours: '00', minutes: '00', seconds: '00' };
         clearInterval(this.timerInterval);
       }
     },
@@ -203,6 +198,7 @@ export default {
   font-family: var(--ma);
   font-weight: 600;
   border: transparent 1px solid;
+  min-width: 22rem;
 
 }
 .join:hover{
@@ -243,6 +239,8 @@ export default {
     margin-top: 3rem;
     padding: 1rem 2rem;
     font-size: 20px;
+    min-width: 18rem;
+
   }
 }
 
@@ -276,6 +274,7 @@ export default {
     margin-top: 3rem;
     padding: 0.8rem 1.8rem;
     font-size: 18px;
+    min-width: 16rem;
   }
 }
 </style>

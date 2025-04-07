@@ -51,19 +51,19 @@
 
     <div class="row">
       <div class="col media-container">
-        <a href="https://www.instagram.com/athens_school_official/?hl=ru" class="media">
+        <a href="https://www.instagram.com/athens_school_official/?hl=ru" target="_blank" class="media">
           <div class="icon">
             <instagram-icon/>
           </div>
           <p class="media-label">Instagram</p>
         </a>
-        <a href="https://www.facebook.com/share/1Brucn1ibk/" class="media">
+        <a href="https://www.facebook.com/share/1Brucn1ibk/"  target="_blank" class="media">
           <div class="icon">
             <facebook-icon/>
           </div>
           <p class="media-label">Facebook</p>
         </a>
-        <a href="https://www.youtube.com/@AthensSchoolTube" class="media">
+        <a href="https://www.youtube.com/@AthensSchoolTube" target="_blank" class="media">
           <div class="icon">
             <youtube-icon/>
           </div>

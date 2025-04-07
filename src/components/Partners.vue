@@ -5,13 +5,14 @@
     </div>
     <div class="d-flex row">
       <div class="partner-image col">
-        <img src="../components/icons/IATIcon.png" alt="International Academy Of Tutoring" class="partner-logo">
+        <img src="../components/icons/AthenesSchoolIcon.png" alt="Школа Афіни" class="smaller">
       </div>
-      <div class="partner-image col">
-        <img src="../components/icons/AthenesSchoolIcon.png" alt="Школа Афіни" class="partner-logo">
+      <div class="partner-image col smaller">
+        <img src="../components/icons/IATIcon.png" alt="International Academy Of Tutoring" class="smaller">
       </div>
+
       <div class="partner-image col">
-        <img src="../components/icons/GameAcademyIcon.png" alt="Тренінгова Компанія Академія Гри" class="partner-logo">
+        <img src="../components/icons/GameAcademy.jpg" alt="Тренінгова Компанія Академія Гри" class="smaller">
       </div>
     </div>
   </section>
@@ -39,6 +40,11 @@ export default {
 .partner-image{
   justify-content: center;
   display: flex;
+}
+.smaller{
+  object-fit: contain;
+  max-height: 90px; /* Контроль висоти зображень */
+  width: auto;
 }
 .partner-logo{
   object-fit: contain;

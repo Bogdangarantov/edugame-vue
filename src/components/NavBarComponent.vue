@@ -8,7 +8,7 @@
               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse justify-content-right" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link class="nav-link active" to="#about">About</router-link>
@@ -24,7 +24,6 @@
           </li>
         </ul>
       </div>
-      <div class="d-lg-none additional-div"></div>
     </div>
   </nav>
 </template>
@@ -38,7 +37,13 @@ export default {
 }
 </script>
 <style>
-
+.navbar-brand{
+  margin-left:10rem
+}
+.justify-content-right{
+  justify-content: right;
+  padding-right: 15rem;
+}
 .nav-item a {
   font-family: var(--ma);
   font-size: 25px;

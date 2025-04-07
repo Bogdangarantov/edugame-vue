@@ -1,18 +1,13 @@
 <template>
   <section class="container-fluid main" id="about">
-    <div class="row">
-      <div class="col">
+    <div class="row flex-wrap">
+      <div class="col-12 col-md-6">
         <div class="text">
-          <div>
-            <h1 class="title">
-              Про подію
-            </h1>
+          <div class="text-wrapper">
+            <h1 class="title">Про подію</h1>
             <p class="regular-text">
-              26 квітня 2025 року Приватна школа «Афіни» м. Києва вже<br>вчетверте організовує
-            </p>
-
-            <p class="regular-text">
-              Практично наукову =) конференцію «EduGame. Ігри в освіті».
+              26 квітня 2025 року Приватна школа «Афіни» м. Києва вже<br>
+              вчетверте організовує Практично наукову =) конференцію «EduGame. Ігри в освіті».
             </p>
             <p class="regular-text big-p">
               Гейміфікація навчального процесу, <br>
@@ -25,8 +20,8 @@
           </div>
         </div>
       </div>
-      <div class="col about-image-div">
-        <img class="about-image" src="../../src/components/icons/about-info.jpg" alt="EduGame Conf">
+      <div class="col-12 col-md-6 about-image-div">
+        <img class="about-image" src="../../src/components/icons/about-info.jpg" alt="EduGame Conf" />
       </div>
     </div>
   </section>
@@ -35,7 +30,7 @@
 <script>
 export default {
   name: "AboutInfoComponent"
-}
+};
 </script>
 
 <style scoped>
@@ -57,11 +52,14 @@ export default {
 
 .about-image {
   width: 26rem !important;
+  max-width: 100%;
 }
 
+
 .text {
-  justify-content: right;
   display: flex;
+  justify-content: center;
+  padding-left: 10rem;
 }
 
 .title {
@@ -74,9 +72,9 @@ export default {
   font-family: var(--m);
   font-size: 20px;
   font-weight: 500;
+  line-height: 140%;
 }
 
-/* Адаптивні стилі для мобільних пристроїв */
 @media (max-width: 768px) {
   .main {
     padding-top: 4rem;
@@ -85,9 +83,10 @@ export default {
 
   .text {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
+    padding-left: 0rem;
+
   }
 
   .title {
@@ -123,7 +122,11 @@ export default {
   .big-p {
     font-size: 16px;
   }
+  .text{
+    padding-left: 0rem;
+    text-align: left;
 
+  }
   .about-image {
     width: 18rem !important;
   }
