@@ -4,8 +4,8 @@
       <div>
         <h1 class="text1">
           Ключова тема цьогорічної конференції — <br>
-          Ігрові технології та AI: як поєднати навчання, мотивацію та <br>
-          адаптацію.
+          “Ігрові технології та AI: як поєднати навчання, мотивацію та
+          адаптацію.”
         </h1>
       </div>
     </div>
@@ -45,10 +45,12 @@ export default {
   .main {
     padding: 2rem;
   }
+
   .text {
     padding: 0 1rem;
     text-align: left;
   }
+
   .text1, .text2 {
     font-size: 24px;
   }
@@ -60,6 +62,7 @@ export default {
     text-align: left;
 
   }
+
   .text1, .text2 {
     font-size: 18px;
   }

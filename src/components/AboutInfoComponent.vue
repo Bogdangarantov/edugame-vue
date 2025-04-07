@@ -6,15 +6,15 @@
           <div class="text-wrapper">
             <h1 class="title">Про подію</h1>
             <p class="regular-text">
-              26 квітня 2025 року Приватна школа «Афіни» м. Києва вже<br>
+              26 квітня 2025 року Приватна школа «Афіни» м. Києва вже
               вчетверте організовує Практично наукову =) конференцію «EduGame. Ігри в освіті».
             </p>
             <p class="regular-text big-p">
-              Гейміфікація навчального процесу, <br>
-              ігропрактика у blended learning та сучасні освітні <br>
-              інструменти ― головні традиційні теми конференції. <br>
-              Наша мета — обмін досвідом у застосуванні <br>
-              едьютейменту (ігрового навчання) між сферами бізнесу, <br>
+              Гейміфікація навчального процесу,
+              ігропрактика у blended learning та сучасні освітні
+              інструменти ― головні традиційні теми конференції.
+              Наша мета — обмін досвідом у застосуванні
+              едьютейменту (ігрового навчання) між сферами бізнесу,
               формальної та неформальної освіти.
             </p>
           </div>
@@ -38,10 +38,6 @@ export default {
   padding-top: 6rem;
   padding-bottom: 5rem;
   height: fit-content;
-}
-
-.big-p {
-  word-break: keep-all;
 }
 
 .about-image-div {
@@ -97,10 +93,6 @@ export default {
     font-size: 16px;
   }
 
-  .big-p {
-    font-size: 18px;
-  }
-
   .about-image-div {
     margin-top: 2rem;
   }
@@ -117,10 +109,6 @@ export default {
 
   .regular-text {
     font-size: 14px;
-  }
-
-  .big-p {
-    font-size: 16px;
   }
   .text{
     padding-left: 0rem;

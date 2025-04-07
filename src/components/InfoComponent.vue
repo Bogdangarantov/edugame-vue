@@ -14,8 +14,7 @@
         </div>
         <div class="row">
           <div class="col text">
-            <p>Перша в Україні гейміфікована</p>
-            <p>практично =) наукова конференція</p>
+            <p>Перша в Україні гейміфікована <br>практично =) наукова конференція</p>
           </div>
         </div>
       </div>
@@ -46,8 +45,8 @@
               </div>
             </div>
           </div>
-          <div class="col-4 flex-wrap d-flex justify-center align-content-center">
-            <div class="element">
+          <div class="col-12 col-md-4 flex-wrap d-flex justify-center align-content-center">
+            <div class="join-wrapper">
               <div class="join" v-on:click="redirect">
                 Придбати квиток
               </div>
@@ -121,6 +120,10 @@ export default {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+.justify-center{
+  display: flex;
+  justify-content: center;
 }
 
 .shutdown-timer {
@@ -222,13 +225,22 @@ export default {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-
+  .join-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    width: 100%;
+  }
   .cypher {
     font-size: 60px;
   }
 
   .label {
     font-size: 18px;
+  }
+
+  .join-wrapper {
+    justify-content: center;
   }
 
   .timer {
@@ -261,7 +273,9 @@ export default {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-
+  .join-wrapper {
+    justify-content: center;
+  }
   .cypher {
     font-size: 50px;
   }

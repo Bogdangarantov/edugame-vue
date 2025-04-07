@@ -1,6 +1,6 @@
 <template>
   <section class="foot container-fluid" id="footer">
-    <p>© 2025. Developed by <strong>from2</strong></p>
+    <p>© 2025. Developed by <strong><a target="_blank" href="https://t.me/from2_work">from2</a></strong></p>
   </section>
 </template>
 
@@ -11,6 +11,25 @@ export default {
 </script>
 
 <style scoped>
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+  text-decoration: none;
+  fill: red;
+}
 .foot {
   background-color: white;
   text-align: center;

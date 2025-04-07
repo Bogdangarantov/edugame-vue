@@ -3,7 +3,7 @@
     <div class="text">
       <div class="text-wrapper">
         <h1 class="fw-medium text2">
-          <strong>«EduGame. Ігри в освіті»</strong> - це не просто конференція. <br>
+          «EduGame. Ігри в освіті» - це не просто конференція. <br>
           Це простір, де гра стає мовою навчання, розвитку, підтримки та <br>
           натхнення.
         </h1>
